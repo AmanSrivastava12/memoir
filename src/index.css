@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Rowdies&display=swap");
+:root {
+  --font1: "Rowdies", cursive;
+  --font2: "Merriweather", serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #afabba;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(95 78 132);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #575757;
+  border-radius: 5px;
+}
+.fontStyle1 {
+  font-family: var(--font1);
+}
+.fontStyle2 {
+  font-family: var(--font2);
+}
+.clrLight {
+  color: #dedce6;
+}
+.clrDark {
+  color: rgb(95 78 132);
+}
+.bgWhite {
+  background-color: #ffffff;
+}
+.bgLight {
+  background-color: #dedce6;
+}
+.bgDark {
+  background-color: rgb(95 78 132);
+}
+.listType {
+  list-style-type: none;
+}
+.borderBottom {
+  border-bottom: 2px solid rgb(255, 255, 255) !important;
+}
+.borderBottom:hover {
+  border-bottom: 2px solid rgb(95 78 132) !important;
+}
+textarea,
+input {
+  border: 2px solid #dedce6;
+  resize: none;
+  outline: none;
+}
+textarea:focus,
+input:focus {
+  border: 2px solid rgb(95 78 132);
+}
+hr {
+  border: 2px dashed rgb(95 78 132);
+  margin: 0;
+}
+.memoClamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.hovering:hover {
+  color: rgb(95 78 132) !important;
+}
+button:disabled {
+  opacity: 0.4;
+}
+.searchInputBox {
+  width: 120px;
+  transition: all 0.8s ease-in-out;
+}
+.searchInputBox:focus {
+  width: 350px;
+}
